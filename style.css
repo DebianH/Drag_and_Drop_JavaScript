@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: browsers-box;
+    font-family: 'Vujahday Script', cursive;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(laptop-ga5d6c903f_1920.jpg);
+    background-position: center center;
+    background-size:contain;
+}
+
+.drop-area {
+    border: 5px dotted #fafafa;
+    height: 500px;
+    width: 700px;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.drop-area.active {
+    background-color: #b5c710;
+    color: #fff;
+    border: 3px ridge #fff;
+    border-radius: 30%;
+}
+.drop-area h2{
+    font-size:30px;
+    font-weight: 500;
+}
+.drop-area span {
+    font-size:25px;
+}
+.drop-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.file-container{
+    display:flex;
+    align-items:center;
+    gap: 10;
+    padding: 10px;
+    border: solid 1px #ddd;
+}
+#preview {
+    margin-top: 10px;
+}
+.status-text {
+    padding: 0 10px;
+}
+.success {
+    color: rgb(101, 98, 228);
+}
+.failure {
+    color: #ff0000;
+}
